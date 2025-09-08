@@ -1,0 +1,14 @@
+librosa
+soundfile
+matplotlib
+torch
+ipython
+pandas
+numpy
+torchaudio
+torchvision
+scikit-learn
+torchsummary
+tdqm
+tensorboard
+sounddata

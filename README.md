@@ -74,7 +74,6 @@ pip install -r requirements.txt
 
 ## Limitations and Future Work
 
-- The code uses synthetic or sample data; for real accuracy, use data similar to the paper's collection methodology.
 - As noted in the paper, the model could be improved by incorporating seasonal variations, weather, or road surface types.
 - Potential extensions: Integrate with real-time traffic APIs or deploy on a cloud platform for public use.
 

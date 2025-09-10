@@ -4,7 +4,7 @@
 
 This repository contains an implementation of the road traffic noise (RTN) prediction model described in the research paper *"A Smart Traffic Noise Prediction Model for Nairobi City Using Artificial Neural Networks"* by Mary Wambui, James Kamau, and Esther Nyambura (Technical University of Kenya and University of Nairobi, 2025).
 
-The paper proposes a machine learning-based model using a Multi-Layer Perceptron (MLP) Artificial Neural Network (ANN) to forecast equivalent noise levels (Leq in dBA) in Nairobi, Kenya. It addresses urban noise pollution in rapidly growing African cities by leveraging traffic and environmental data. The model outperforms traditional statistical models like CoRTN and RLS-90, achieving a Mean Absolute Error (MAE) of 0.86 dBA and an R² of 0.93.
+The paper proposes a machine learning-based model using a Multi-Layer Perceptron (MLP) Artificial Neural Network (ANN) to forecast equivalent noise levels (Leq in dBA) in Nairobi, Kenya. It addresses urban noise pollution in rapidly growing African cities by leveraging traffic and environmental data. The model outperforms traditional statistical models like CoRTN and RLS-90, achieving a Mean Absolute Error (MAE) of 0.97 dBA and an R² of 0.90.
 
 In this repository, I have implemented the core MLP ANN model in Python using PyTorch, based on the architecture and methodology outlined in the paper. This includes data preprocessing, model training, hyperparameter tuning via grid search, and evaluation. I've also included scripts for simulating predictions with sample data and a basic web dashboard prototype for real-time noise monitoring (using Flask or Streamlit).
 
@@ -18,7 +18,7 @@ In this repository, I have implemented the core MLP ANN model in Python using Py
   - Loss Function: Mean Squared Error (MSE).
   - Optimizer: Adam.
   - Training: 80/20 train-test split, 5-fold cross-validation.
-- **Performance**: MAE: 0.86 dBA, RMSE: 1.11 dBA, R²: 0.93, Pearson correlation: 0.96.
+- **Performance**: MAE: 0.97 dBA, RMSE: 1.38 dBA, R²: 0.90, Pearson correlation: 0.9467.
 - **Comparisons**: Superior to models like XGBoost, SVR, Random Forest, CoRTN (MAE: 5.0 dBA), and RLS-90 (MAE: 11.0 dBA).
 - **Deployment**: The paper describes a web-based dashboard for real-time predictions; this repo includes a simple prototype.
 
@@ -54,7 +54,7 @@ pip install -r requirements.txt
    ```
    python train_model.py --data_path sample_data.csv
    ```
-   This trains the MLP on provided data and saves the model to `noise_predictor.pth`.
+   This trains the MLP on provided data and saves the model to `new_MLP_noise_predictor_model.pth`.
 
 2. **Make Predictions**:
    ```

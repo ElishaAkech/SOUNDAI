@@ -32,7 +32,7 @@ def load_model():
 model = load_model()
 
 # Load data for location info (e.g., lanes, average values)
-file_path = 'data/FINAL DATA.xlsx'  # Update to your actual path
+file_path = 'data/FINAL DATA.xlsx'  
 df_leq = pd.read_excel(file_path, sheet_name='Noise Leq Data')
 df_speed = pd.read_excel(file_path, sheet_name='SPEED')
 df_pcu = pd.read_excel(file_path, sheet_name='PCU')

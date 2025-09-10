@@ -7,7 +7,6 @@ import os
 SAMPLE_RATE = 22050  # Assuming this from UrbanSoundDataset, adjust if different
 NUM_SAMPLES = 22050  # Assuming 1 second at 22050 Hz, adjust if different
 
-# Replace the following class_mapping with your new list from the picture
 class_mapping = [
     "bicycle",
     "Motorcycle",

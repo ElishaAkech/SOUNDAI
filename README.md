@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains an implementation of the road traffic noise (RTN) prediction model described in the research paper *"A Smart Traffic Noise Prediction Model for Nairobi City Using Artificial Neural Networks"* by Mary Wambui, James Kamau, and Esther Nyambura (Technical University of Kenya and University of Nairobi, 2025).
+This repository contains an implementation of the road traffic noise (RTN) prediction model described in the research paper *"A Smart Traffic Noise Prediction Model for Nairobi City Using Artificial Neural Networks"*
 
 The paper proposes a machine learning-based model using a Multi-Layer Perceptron (MLP) Artificial Neural Network (ANN) to forecast equivalent noise levels (Leq in dBA) in Nairobi, Kenya. It addresses urban noise pollution in rapidly growing African cities by leveraging traffic and environmental data. The model outperforms traditional statistical models like CoRTN and RLS-90, achieving a Mean Absolute Error (MAE) of 0.97 dBA and an R² of 0.90.
 
@@ -52,25 +52,25 @@ pip install -r requirements.txt
 
 1. **Train the Model**:
    ```
-   python train_model.py --data_path sample_data.csv
+   Code provided in NewTrafficModel.ipynb notebook
    ```
    This trains the MLP on provided data and saves the model to `new_MLP_noise_predictor_model.pth`.
 
 2. **Make Predictions**:
    ```
-   python predict.py --model_path noise_predictor.pth --input "motorcycles=10,light=50,medium=10,heavy=5,speed=45,lanes=3,pcu=1500,flow=0"
+   Predictions can be viewed in the web version that uses the saved model `new_MLP_noise_predictor_model.pth`.
    ```
    Outputs the predicted Leq.
 
 3. **Run the Dashboard**:
    ```
-   streamlit run dashboard.py
+   streamlit run StreamlitWeb\app.py
    ```
    Open in your browser to input values and view predictions interactively.
 
 4. **Notebooks**:
-   - `exploration.ipynb`: Data preprocessing and visualization.
-   - `model_training.ipynb`: Full training and evaluation pipeline.
+   - `AudioPreprocessingInitial.ipynb`: Data preprocessing and visualization.
+   - `NewTrafficModel.ipynb`: Full training and evaluation pipeline.
 
 ## Limitations and Future Work
 

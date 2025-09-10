@@ -14,10 +14,10 @@ class_mapping = [
 ]
 
 # Paths
-wav_folder = "data\\DATA\\output_chunks"  # Replace with your WAV folder path
-csv_path = "data\\DATA\\output_chunks\\metadata.csv"         # Replace with your metadata CSV path
-dataset_path = "data\\DATA\\output_chunks"  # Replace with labeled dataset path (for fine-tuning)
-model_save_path = "finetuned_yamnet"  # Path to save/load fine-tuned model
+wav_folder = "data\\DATA\\output_chunks"  
+csv_path = "data\\DATA\\output_chunks\\metadata.csv"         
+dataset_path = "data\\DATA\\output_chunks"  
+model_save_path = "finetuned_yamnet" 
 
 # Step 1: Load and preprocess audio
 def load_wav_16k_mono(file_path):
